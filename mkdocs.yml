@@ -1,0 +1,43 @@
+site_name: Academy Hub - Custom S.p.A.
+site_url: https://github.com/ivanrobuschi-custom/home_academy_hub.git
+site_author: Ivan Robuschi
+theme:
+  name: material
+  logo: assets/icons/logo.png
+  favicon: assets/icons/favicon.png
+  language: it
+  features:
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - navigation.footer
+
+  palette:
+    primary: blue grey
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences
+
+plugins:
+  - search
+
+copyright: Copyright Custom S.p.A 2026
+
+nav:
+  - Home: index.md
+  - Registratori Telematici: registratori-telematici.md
+  - Normativa: normativa.md
+  - HyperBeauty: hyperbeauty.md
+  - HyperRetailCloud: hyperretailcloud.md
