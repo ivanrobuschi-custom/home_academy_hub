@@ -25,6 +25,26 @@ body, h1, h2, h3, h4, h5, h6, input, button {
   font-family: 'Titillium Web', sans-serif;
 }
 
+/* Header pulito: solo logo, niente tab di navigazione */
+.md-header__topic {
+  max-width: none;
+}
+
+/* Nascondi sidebar sinistra (navigazione) e destra (indice/toc) */
+.md-sidebar--primary,
+.md-sidebar--secondary {
+  display: none;
+}
+
+/* Contenuto a tutta larghezza senza le sidebar */
+.md-grid {
+  max-width: 100%;
+}
+
+.md-content {
+  max-width: 100%;
+}
+
 /* 2. Griglia di card (stile Academy custom4u.it) */
 .academy-grid {
   display: grid;
