@@ -12,7 +12,6 @@ theme:
     - navigation.tracking
     - navigation.tabs
     - navigation.tabs.sticky
-    - navigation.top
     - search.suggest
     - search.highlight
     - navigation.footer
