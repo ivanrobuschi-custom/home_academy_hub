@@ -1,0 +1,98 @@
+/* 1. Font Personalizzato */
+@font-face {
+  font-family: 'Titillium Web';
+  src: url('../fonts/TitilliumWeb-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --md-text-font: 'Titillium Web', sans-serif;
+
+  /* Colori aziendali Custom S.p.A. */
+  --md-primary-fg-color:        #617C8D;
+  --md-primary-fg-color--light: #7A92A1;
+  --md-primary-fg-color--dark:  #4B6270;
+
+  --md-footer-bg-color:         #1B3640;
+  --md-footer-bottom-bg-color:  #1B3640;
+  --md-footer-fg-color:         #ffffff;
+  --md-footer-bottom-fg-color:  #ffffff;
+}
+
+body, h1, h2, h3, h4, h5, h6, input, button {
+  font-family: 'Titillium Web', sans-serif;
+}
+
+/* Header pulito: solo logo, niente tab di navigazione */
+.md-header__topic {
+  max-width: none;
+}
+
+/* Nascondi sidebar sinistra (navigazione) e destra (indice/toc) */
+.md-sidebar--primary,
+.md-sidebar--secondary {
+  display: none !important;
+}
+
+/* 2. Griglia di card (stile Academy custom4u.it) */
+.academy-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 260px));
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.academy-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-decoration: none !important;
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--md-default-bg-color);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  color: inherit;
+}
+
+.academy-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+}
+
+.academy-card .academy-card-icon {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background: linear-gradient(135deg, #1B3640, #4B6270);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 1rem;
+  line-height: 1.3;
+}
+
+.academy-card .academy-card-title {
+  padding: 1rem 0.75rem 1.25rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--md-default-fg-color);
+}
+
+.academy-card .academy-card-sub {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 400;
+  text-transform: none;
+  color: var(--md-default-fg-color--light);
+  margin-top: 0.25rem;
+}
