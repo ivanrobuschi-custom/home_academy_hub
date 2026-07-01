@@ -39,7 +39,8 @@ body, h1, h2, h3, h4, h5, h6, input, button {
 /* 2. Griglia di card (stile Academy custom4u.it) */
 .academy-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 260px));
+  justify-content: center;
   gap: 1.5rem;
   margin: 2rem 0;
 }
